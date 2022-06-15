@@ -5,13 +5,16 @@ import ChartSongs from "./ChartSongs";
 const MusicList = ({songs}) => {
 
     const getSongs = songs.map((song, index) => {
-        return <ChartSongs
+        index += 1
+        return (
+        <ChartSongs
         chartPosition={index}
         songTitle={song['im:name'].label}
         songArtist={song['im:artist'].label}
         key={index}
         />
-    })
+    );
+        });
 
     return (
         <>

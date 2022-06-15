@@ -8,8 +8,8 @@ const ChartSongs =({chartPosition, songTitle, songArtist}) => {
             <h1>{chartPosition}</h1>
         </div>
         <div className="song-details">
-            <p className='song-title'>{songTitle}</p>
-            <p className='song-artist'>{songArtist}</p>
+            <h3 className='song-title'>Title: {songTitle}</h3>
+            <p className='song-artist'>Artist: {songArtist}</p>
         </div>
         </>
     );
